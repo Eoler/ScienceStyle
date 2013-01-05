@@ -779,7 +779,7 @@ a img {
 	height:100%;
 	padding:5px 0 0;
 /* 	background: #f7f7f7; */
-	width: 299px !important;
+	width: /*299px*/ auto !important;
 	line-height:1.3em;
 }
 
@@ -2130,4 +2130,29 @@ strong[style*='color:#EF1D1D'] {
 
 .selected strong[style*='color:#EF1D1D'] {
 	color:red!important;
+}
+
+
+/* Scrollbars */
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 1ex;
+}
+::-webkit-scrollbar-track {
+    background: #FFF;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #CCC;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AAA;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #888;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
 }
