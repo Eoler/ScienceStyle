@@ -265,7 +265,7 @@ hr {
 #statusbar {
 	position:absolute;
 	right:0;
-	top:27px;
+	top:17px;
 }
 
 .rtl #statusbar {
@@ -279,6 +279,8 @@ hr {
 	padding:0 0 30px;
 	margin:0;
 	color:#89939E;
+    position: relative;
+    z-index: 333;
 }
 
 .rtl #supplementalNav {
@@ -417,7 +419,7 @@ form input[type=text],form input[type=password],form textarea {
 }
 
 .sectionBody input.inputBox[type=text],.sectionBody input.inputBox[type=password],.sectionBody select.inputBox {
-	width:350px;
+	width:360px;
 }
 
 input[type="email"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="text"]:focus,input[type="url"]:focus,textarea:focus,select:focus {
@@ -519,7 +521,7 @@ form input.hidden {
 
 form textarea {
 	height:78px;
-	width:350px;
+	width:360px;
 	line-height:1.5;
 }
 
@@ -797,12 +799,12 @@ a img {
 #floater {
 	display:none;
 	position:absolute;
-	width:200px;
-	height:50px;
+	width:250px;
+	height:75px;
 	top:25px;
 	left:4px;
 	background:#fff;
-	border-bottom:1px solid #666;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 	z-index:500;
 }
 
@@ -967,21 +969,25 @@ a.hometblink:hover {
 }
 
 #preLoader {
-	display: none;
+	/*display: none;*/
 	position:absolute;
-	z-index:50000;
-	width:100%;
+	z-index:50505;
+	width:99%;
 	height:100%;
+    margin:50px 5px 5px 5px;
 	text-align:center;
 	vertical-align:middle;
 }
-
 .preLoaderText {
-	background-color:#fff;
-	width:300px;
-	height:150px;
+    height:100%;
+	/*width:300px;
+	height:150px;*/
 	padding:50px;
-	border:1px solid #039;
+    border:1px solid #AAA;
+    -moz-border-radius:5px;
+   	-webkit-border-radius:5px;
+   	border-radius:5px;
+    background-color:#fff;
 }
 
 /* -------------------------[ contextmenu in editing modules ]--- */
@@ -989,10 +995,10 @@ a.hometblink:hover {
 	background:#fff;
 	margin:0;
 	padding:0;
-	border:1px solid #039;
+	border:1px solid #23393C;
 	border-color:#eaeaea #909090 #707070 #eaeaea;
 	position:absolute;
-	z-index:10000;
+	z-index:10101;
 }
 
 .cntxMnuItem {
@@ -1799,7 +1805,7 @@ form#mutate input.disabled {
 }
 
 form#mutate select.inputBox,form#mutate input,form#mutate textarea {
-	width:300px;
+	width:360px;
 }
 
 form#mutate textarea.textarea {
@@ -1813,7 +1819,7 @@ form#mutate textarea.textarea {
 
 form#mutate textarea.tv_textareamini {
 	height:100px;
-	width:300px;
+	width:360px;
 	overflow-y:scroll;
 }
 
